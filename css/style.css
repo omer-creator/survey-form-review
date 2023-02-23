@@ -39,3 +39,7 @@ body {
   padding: 2%;
   font-size: 1.15rem;
 }
+
+#comments {
+  height: 120px;
+}
