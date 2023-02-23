@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+   <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+    <form id="survey-form" action="" method="post">
+      <label id="name-label">Name</label>
+      <input class="form-input" id="name" name="name" required type="text" placeholder="Enter your Name"/>
+      <label id="email-label">Email</label>
+      <input class="form-input" id="email" required name="email" type="email" placeholder="Enter your Email"/>
+      <label id="number-label">Age</label>
+      <input class="form-input" id="number" name="age" type="number" min="18" max="80" placeholder="Enter your age"/>
+      <label><strong>Which option best describes your current role?</strong></label>
+      <select id="dropdown" name="role" class="form-input">
+        <option value="select your role">Select your role</option>
+        <option value="student">Student</option>
+        <option value="ful time job">Full time job</option>
+      </select>
+      <label>Would you recommend freeCodeCamp to a friend?</label> <br>
+      <label><input type="radio" name="choice"value="yes" checked>Definitly</label> <br>
+      <label><input name="choice" value="maybe" type="radio"/>Maybe</label><br>
+      <label><input name="choice" value="notsure" type="radio"/>Not Sure</label><br>
+
+      <label>What would you like see improved?<i>(check all that apply)</i></label><br>
+      <label><input name="prefer" value="front-end-projects" type="checkbox" />Front-end Projects</label><br>
+      <label><input name="prefer" value="back-end-projects" type="checkbox" />Back-end Projects</label><br>
+      <label><input name="prefer" value="data-vissualization" type="checkbox" />Data Visualization</label><br>
+      <label><input name="prefer" value="chellenges" type="checkbox" />Chellenges</label><br>
+      
+      <label>Any comments or suggestions></label>
+      <br>
+      <textarea id="comments" style= height:120px; placeholder="Enter your comments here..."></textarea>
+      <br>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+
+    </form>
+
+   </div>
+    
+    <script  src="js/index.js"></script>
+  </body>
+</html>
