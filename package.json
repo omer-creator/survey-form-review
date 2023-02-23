@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/omer-creator/survey-form-review#readme",
   "devDependencies": {
+    "husky": "^8.0.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
